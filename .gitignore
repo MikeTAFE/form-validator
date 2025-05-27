@@ -1,0 +1,17 @@
+# Ignore Composer directory
+/vendor/
+
+# Ignore VS Code config
+/.vscode/
+
+# Local environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# OS junk
+Thumbs.db
+.DS_Store
