@@ -5,9 +5,13 @@
   composer require --dev phpunit/phpunit
 
   Run tests:
-  ./vendor/bin/phpunit tests/FormValidatorTest.php
+  php ./vendor/bin/phpunit tests/FormValidatorTest.php
 */
 
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../src/FormValidator.php';
+
+use FormValidator;
 use PHPUnit\Framework\TestCase;
 
 final class FormValidatorTest extends TestCase
