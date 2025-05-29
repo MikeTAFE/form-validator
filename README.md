@@ -147,7 +147,7 @@ Requires [PHPUnit](https://phpunit.de/):
 
 ```bash
 composer install
-vendor/bin/phpunit
+php ./vendor/bin/phpunit tests/FormValidatorTest.php
 ```
 
 ---
