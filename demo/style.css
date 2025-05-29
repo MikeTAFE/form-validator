@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+h1 {
+  margin: 0 0 1.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #1a8a9255;
+  color: #1a8a92;
+  font-weight: normal;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Checkbox label styling to improve tap target on mobile */
+label > input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Make button full width on mobile */
+button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1em;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+@media (min-width: 500px) {
+  button {
+    width: auto;
+  }
+}
+
+.success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #155724;
+  border-radius: 4px;
+}
+
+form :is(span, div).error {
+  margin-top: 0.3rem;
+  color: red;
+  font-size: 0.9em;
+}
