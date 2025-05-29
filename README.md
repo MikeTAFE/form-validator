@@ -22,7 +22,26 @@ Supports validating required fields, types (email, int, float, boolean, date), s
 
 ## Installation
 
-Clone/download manually and use Composer autoloading:
+The FormValidator library can be installed as a Composer package (via the GitHub repo) or just taken and used directly inside your project.
+
+### 1. Using FormValidator directly (just stealing 1 file)
+
+You can just copy and paste the main `FormValidator.php` class file into your own project to get up and running quickly, without worrying about Composer or other methods. This will give you the code, but won't enable you to easily update the library later on.
+
+### 2. Installing as a Composer library
+
+To install FormValidator as a Composer library, you can refer directly to this repo on GitHub.
+
+```bash
+composer require miketafe/form-validator:dev-main \
+  --repository='{"type":"vcs", "url":"https://github.com/miketafe/form-validator"}'
+```
+
+> Uses PSR-4 autoloading with namespace `MikeTAFE`.
+
+### 3. Cloning this project
+
+If you want the entire repo, you can clone or download it manually and then use Composer autoloading:
 
 ```bash
 git clone https://github.com/MikeTAFE/form-validator.git
@@ -35,7 +54,7 @@ composer install
 
 ---
 
-## Directory Structure
+## Directory structure
 
 ```
 form-validator/
@@ -49,7 +68,7 @@ form-validator/
 
 ---
 
-## Usage Example
+## Usage example
 
 ```php
 require 'vendor/autoload.php';
@@ -94,7 +113,7 @@ if (!empty($errors)) {
 
 ---
 
-## Rule Reference
+## Rule reference
 
 | Rule         | Description                                      |
 | ------------ | ------------------------------------------------ |
@@ -112,7 +131,7 @@ if (!empty($errors)) {
 
 ---
 
-## Nested Field Support
+## Nested field support
 
 Use dot notation to access deeply nested values, like:
 
@@ -122,7 +141,7 @@ Use dot notation to access deeply nested values, like:
 
 ---
 
-## Running Tests
+## Running tests
 
 Requires [PHPUnit](https://phpunit.de/):
 
