@@ -31,6 +31,8 @@ cd form-validator
 composer install
 ```
 
+> Uses PSR-4 autoloading with namespace `MikeTAFE`.
+
 ---
 
 ## Directory Structure
@@ -52,7 +54,7 @@ form-validator/
 ```php
 require 'vendor/autoload.php';
 
-use FormValidator;
+use MikeTAFE\FormValidator;
 
 $data = [
     'username' => 'jo',

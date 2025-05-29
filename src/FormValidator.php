@@ -1,5 +1,7 @@
 <?php
 
+namespace MikeTAFE;
+
 /**
  * Class FormValidator
  *

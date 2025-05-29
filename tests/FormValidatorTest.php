@@ -9,9 +9,8 @@
 */
 
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../src/FormValidator.php';
 
-use FormValidator;
+use MikeTAFE\FormValidator;
 use PHPUnit\Framework\TestCase;
 
 final class FormValidatorTest extends TestCase
