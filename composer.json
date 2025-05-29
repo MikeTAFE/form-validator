@@ -1,5 +1,23 @@
 {
+    "name": "miketafe/form-validator",
+    "description": "A lightweight, reusable, and extensible PHP 8+ form validation class.",
+    "type": "library",
+    "require": {
+    },
     "require-dev": {
         "phpunit/phpunit": "^11.5"
-    }
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MikeTAFE\\FormValidator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mike Kirkwood-Smith",
+            "email": "michael.kirkwood-smith3@tafensw.edu.au"
+        }
+    ],
+    "minimum-stability": "stable"
 }
