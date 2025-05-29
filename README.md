@@ -155,9 +155,3 @@ vendor/bin/phpunit
 ## License
 
 MIT License © 2025 Michael Kirkwood-Smith
-
----
-
-## Credits
-
-FormValidator was built for modern PHP projects that need quick and flexible validation without a full framework.
